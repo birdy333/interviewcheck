@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>设备类型检测</title>
+<title>请等待...</title>
 <script>
     function redirectToSinaOrDisplayMessage() {
         var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
         if (isMobile) {
             window.location.href = "https://www.sina.com";
         } else {
-            document.getElementById("message").innerText = "该系统无法使用电脑。";
+            document.getElementById("message").innerText = "该系统无法在电脑使用，请更换为手机打开";
         }
     }
 </script>
