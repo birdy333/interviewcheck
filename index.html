@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>设备检测</title>
+<title>设备类型检测</title>
 <script>
     function redirectToSinaOrDisplayMessage() {
         var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
         if (isMobile) {
-            window.location.href = "https://kfzx1.aidaform.com/interview";
+            window.location.href = "https://www.sina.com";
         } else {
-            document.getElementById("message").innerText = "不支持电脑打开本系统，请使用手机”;
+            document.getElementById("message").innerText = "该系统无法使用电脑。";
         }
     }
 </script>
