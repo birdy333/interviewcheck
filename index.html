@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>设备检测</title>
+<script>
+    function redirectToSinaOrDisplayMessage() {
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        if (isMobile) {
+            window.location.href = "https://kfzx1.aidaform.com/interview";
+        } else {
+            document.getElementById("message").innerText = "该系统无法使用电脑,请使用手机打开”;
+        }
+    }
+</script>
+</head>
+<body onload="redirectToSinaOrDisplayMessage()">
+    <p id="message"></p>
+</body>
+</html>
